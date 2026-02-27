@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+.vscode/
+.idea/
+chromedriver.exe
+tests/testdata/current/
+tests/testdata/diff/
