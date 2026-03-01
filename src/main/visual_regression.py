@@ -1,6 +1,6 @@
 from PIL import Image, ImageChops
-import os
 import numpy as np
+import os
 
 def compare_images(baseline_path, current_path, diff_path, threshold=1.0):
     baseline = Image.open(baseline_path)
@@ -10,7 +10,8 @@ def compare_images(baseline_path, current_path, diff_path, threshold=1.0):
         return {
             "status": "FAIL",
             "reason": "Image dimensions mismatch",
-            "difference_percentage": 100
+            "difference_percentage": 100,
+            "threshold": threshold
         }
 
     diff = ImageChops.difference(baseline, current)
