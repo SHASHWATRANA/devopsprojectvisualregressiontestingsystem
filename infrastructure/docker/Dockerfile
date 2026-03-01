@@ -18,4 +18,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV CHROME_BIN=/usr/bin/chromium
 ENV PATH="/usr/lib/chromium/:"
 
-CMD ["python", "-m", "pytest", "-s"]
+CMD ["python3", "-m", "pytest", "-s"]
