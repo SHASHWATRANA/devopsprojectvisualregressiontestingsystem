@@ -21,6 +21,7 @@ def test_visual_regression():
 
     if not os.path.exists(baseline_path):
         print("Baseline not found. Creating baseline image...")
+        os.makedirs(os.path.dirname(baseline_path), exist_ok=True)
         os.rename(current_path, baseline_path)
         print("Baseline created successfully.\n")
         assert True

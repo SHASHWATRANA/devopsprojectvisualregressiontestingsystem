@@ -17,6 +17,9 @@ def capture_screenshot(url, save_path, headless=False):
     else:
         chrome_options.add_argument("--start-maximized")
 
+    # Ensure directory exists
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+
     # Use system chromedriver if inside Docker
     if os.path.exists("/usr/bin/chromedriver"):
         service = Service("/usr/bin/chromedriver")
