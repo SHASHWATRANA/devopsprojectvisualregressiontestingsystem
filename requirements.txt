@@ -1,4 +1,5 @@
 selenium
 pillow
 pytest
-webdriver-managernumpy
+webdriver-manager
+numpy
