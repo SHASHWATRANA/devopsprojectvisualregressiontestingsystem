@@ -1,0 +1,3 @@
+// Jenkins pipeline not used in this project.
+// CI/CD implemented using GitHub Actions.
+// See .github/workflows/ci.yml
