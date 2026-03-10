@@ -3,3 +3,5 @@ pillow
 pytest
 webdriver-manager
 numpy
+fastapi
+uvicorn
